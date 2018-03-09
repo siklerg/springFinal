@@ -1,0 +1,25 @@
+<div>
+    <div>
+        <h3>Kő-papír-olló játék</h3>
+        <p>Kattints az általad választott képre, majd a "Játék" gombra!</p>
+    </div>
+    <div>
+        <img src="kpo/ko.jpg" ng-click="ko()">
+        <img src="kpo/papir.jpg" ng-click="papir()">
+        <img src="kpo/ollo.jpg" ng-click="ollo()">
+    </div>
+    <div>
+        <button ng-click="game()" type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-play"> Játék</span>
+        </button>
+        <button ng-click="erase()" type="button" class="btn btn-danger">
+            <span class="glyphicon glyphicon-remove-circle"> Nulláz</span>
+        </button>
+        <p>Az állás: {{jatekos}} - {{gep}}</p>
+        <p>{{eredmeny}}</p>
+    </div>
+    <div>
+        <img src="{{tipp}}" class="img-thumbnail">
+        <img src="{{valasz}}" class="img-thumbnail">
+    </div>
+</div>

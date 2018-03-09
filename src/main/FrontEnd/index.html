@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="bookApp" lang="hu">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="books/book-controller.js"></script>
+    <script src="books/bookAdd-controller.js"></script>
+    <script src="books/bookUpdate-controller.js"></script>
+    <script src="kpo/kpo-controller.js"></script>
+    <script src="service.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>BookStore</title>
+</head>
+
+
+<body class="container-fluid">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="navbar-brand">Powered by Angular, W3 CSS, Bootstrap and Me</li>
+                <li>
+                    <a href="/#!/">Főoldal</a>
+                </li>
+                <li>
+                    <a href="/#!/books">Könyvesbolt</a>
+                </li>
+                <li>
+                    <a href="/#!/kpo">Kő-papír-olló</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="w3-white col-md-12 text-center">
+        <ng-view></ng-view>
+    </div>
+    <hr>
+    <div class="w3-dark text-right">
+        <p>Nagy Házifeladat by SG - version 2.0 </p>
+    </div>
+
+</body>
+
+</html>

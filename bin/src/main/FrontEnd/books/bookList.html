@@ -1,0 +1,24 @@
+<h1>Könyvek:</h1>
+<button ng-click="getAllBooks()" type="button" class="btn btn-success">
+    <span class="glyphicon glyphicon-play"> Frissítés</span>
+</button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Könyv címe</th>
+            <th>ISBN szám</th>
+            <th>TÖRLÉS</th>
+            <th>MÓDOSÍTÁS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in books">
+            <td>{{book.id}}</td>
+            <td>{{book.name}}</td>
+            <td>{{book.isbn}}</td>
+            <td><button ng-click="deleteShop(item)" type="button" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
+            <td><button ng-click="editShop(item.id)" type="button" class="btn btn-warning"><span class="glyphicon glyphicon-wrench"></span></button></td>
+        </tr>
+    </tbody>
+</table>

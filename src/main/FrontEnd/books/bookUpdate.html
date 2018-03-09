@@ -1,0 +1,11 @@
+<div>
+    <h3>Könyv módosítás</h3>
+    <div class="form-group">
+        <input class="form-control" ng-model="Book.name" placeholder="Cím">
+    </div>
+    <div class="form-group">
+        <input class="form-control" ng-model="Book.isbn" placeholder="ISBN szám">
+    </div>
+    <button ng-click="updateBook(Book)" type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Módosítás</button>
+    <a class="btn btn-danger" href="/#!/books"><span class="glyphicon glyphicon-arrow-left"></span> Vissza</button></a>
+</div>
